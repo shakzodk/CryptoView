@@ -1,10 +1,10 @@
 const express = require("express");
 const { storeDataOnIPFS, getDataFromIPFS } = require("../controllers/ipfsController");
-// const requireAuth = require("../middleware/requireAuth.js");
+const requireAuth = require("../middleware/requireAuth.js");
 
 const router = express.Router();
 
-// router.use(requireAuth);
+router.use(requireAuth);
 
 router.post("/store", storeDataOnIPFS);
 

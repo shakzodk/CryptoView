@@ -8,7 +8,7 @@ const transactionsRoutes = require("./routes/Transactions.js");
 const userPortfolio = require("./routes/userPortfolio.js");
 const nftRoutes = require("./routes/nfts.js");
 const transactionRoutes = require("./routes/transaction.js");
-const ipfsRoutes = require("./routes/ipfsRoutes.js");
+const ipfsRoutes = require("./routes/ipfs.js");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
